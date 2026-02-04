@@ -25,7 +25,7 @@ COPY package.json package-lock.json ./
 # Prisma generate runs on postinstall, so schema must exist during install.
 COPY prisma ./prisma
 
-RUN npm ci
+RUN npm i
 
 
 FROM base AS builder
